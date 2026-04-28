@@ -195,7 +195,7 @@ export function FuelSolution() {
                     passes through before it reaches your tank.
                   </p>
 
-                  <div className="grid grid-cols-3 gap-3 sm:gap-4 max-w-xl">
+                  <div className="grid grid-cols-3 gap-2 sm:gap-4 max-w-xl">
                     {[
                       ["6", "pillars"],
                       ["24/7", "dispatch"],
@@ -203,12 +203,12 @@ export function FuelSolution() {
                     ].map(([value, label]) => (
                       <div
                         key={label}
-                        className="rounded-2xl border border-zap-black/10 bg-white/80 px-4 py-4 backdrop-blur-sm"
+                        className="rounded-2xl border border-zap-black/10 bg-white/80 px-2 py-3 sm:px-4 sm:py-4 backdrop-blur-sm"
                       >
-                        <div className="text-2xl md:text-3xl font-extrabold tracking-tight text-zap-black">
+                        <div className="whitespace-nowrap text-lg sm:text-2xl md:text-3xl font-extrabold tracking-tight text-zap-black leading-none">
                           {value}
                         </div>
-                        <div className="mt-1 text-[11px] font-semibold tracking-[0.24em] uppercase text-zap-grey-mid">
+                        <div className="mt-1 whitespace-nowrap text-[8px] sm:text-[11px] font-semibold tracking-[0.12em] sm:tracking-[0.24em] uppercase text-zap-grey-mid leading-none">
                           {label}
                         </div>
                       </div>
